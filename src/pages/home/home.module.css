@@ -1,0 +1,9 @@
+.home {
+  padding: 0 70px;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 1024px) {
+  .home {
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+.bg {
+  width: 15vw;
+  height: 15.6vw;
+  transform: rotate(33.991deg);
+  border-radius: 351.137px;
+  border-radius: 351.137px;
+  background: linear-gradient(
+    180deg,
+    rgba(247, 141, 141, 0.8) 0%,
+    rgba(251, 76, 76, 0.8) 45%,
+    rgba(255, 0, 0, 0.8) 97.92%,
+    rgba(166, 0, 0, 0.8) 100%
+  );
+  position: absolute;
+  top: 10%;
+  left: -5vw;
+}
+.bg-2 {
+  width: 18vw;
+  height: 19vw;
+  transform: rotate(33.991deg);
+  border-radius: 515.448px;
+  background: linear-gradient(
+    180deg,
+    rgba(236, 157, 134, 0.8) 0%,
+    rgba(234, 1, 1, 0.8) 100%
+  );
+  position: absolute;
+  bottom: 20%;
+  right: -5vw;
+}
+.go-home {
+  width: 15vw;
+  height: 7vw;
+  background-color: transparent;
+  border: 1px solid red;
+  border-radius: 30px;
+  font-weight: 500px;
+  color: rgba(234, 1, 1, 0.8);
+}
+.svg-404 {
+  height: 40vw;
+  width: 50vw;
+}
+.page {
+  position: "relative";
+  margin-bottom: 50px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+@media screen and (max-width: 576px) {
+  .go-home {
+    width: 20vw;
+  }
+  .page {
+    margin: 0;
+  }
+  .bg {
+    width: 30vw;
+    height: 30.6vw;
+  }
+  .bg-2 {
+    width: 30vw;
+    height: 32.6vw;
+  }
+}

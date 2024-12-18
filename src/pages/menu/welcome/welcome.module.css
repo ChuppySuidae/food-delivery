@@ -1,0 +1,65 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.welcome > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome > div > h1 {
+  z-index: 1;
+  color: #67666a;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 10px;
+}
+.welcome > div > h2 {
+  margin-top: -160px;
+  font-family: "Just Another Hand";
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.welcome > p {
+  color: #67666a;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21.614px;
+  max-width: 500px;
+  margin-top: -100px;
+}
+@media screen and (max-width: 720px) {
+  .welcome > div > h1 {
+    font-family: Dongle;
+    font-size: 40px;
+  }
+  .welcome > div > h2 {
+    margin-top: -120px;
+    font-size: 80px;
+    font-weight: 100;
+  }
+  .welcome > p {
+    font-family: Dongle;
+    font-size: 18px;
+
+    line-height: 18.614px;
+    max-width: 300px;
+    margin-top: -80px;
+  }
+  .welcome > svg {
+    width: 310px;
+  }
+}

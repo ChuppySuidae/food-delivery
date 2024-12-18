@@ -1,0 +1,53 @@
+.bg {
+  width: 100%;
+
+  background-image: url(src/assets/bg-sign-up.svg);
+
+  -o-background-size: 100% 100%;
+  background-size: cover;
+  background-image: url("src/assets/bg-sign-up.svg");
+}
+.content {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 7% 2%;
+  border-radius: var(--Flat, 0px);
+  background: var(--button-gray-bg, #f7f7f7);
+  width: 60%;
+  position: absolute;
+  right: 0;
+}
+.form-register span,
+.form-register span:hover,
+.form-register span:focus {
+  background: transparent;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.element-1 {
+  top: 20%;
+  left: 5%;
+  position: fixed;
+  border-radius: 343.087px;
+  width: 20vw;
+  height: 20vw;
+  transform: rotate(33.991deg);
+  background: linear-gradient(
+    180deg,
+    rgba(249, 162, 138, 0.8) 0%,
+    rgba(226, 31, 10, 0.8) 100%
+  );
+}
+.element-2 {
+  top: 0;
+  position: fixed;
+  border-radius: 343.087px;
+  width: 15vw;
+  height: 15vw;
+  transform: rotate(33.991deg);
+  background: linear-gradient(
+    180deg,
+    rgba(249, 162, 138, 0.8) 0%,
+    rgba(226, 31, 10, 0.8) 100%
+  );
+}

@@ -1,0 +1,130 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 70px;
+}
+.animate-charcter {
+  margin-block: 0;
+  font-family: Poppins;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+.content > p {
+  color: var(--Gray-1, #333);
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; /* 166.667% */
+}
+.content > button {
+  width: 212px;
+  height: 78px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1.5px solid #eb5757;
+  background-color: #fff;
+  color: #eb5757;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bg-img {
+  width: 100%;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .content-right {
+    display: none;
+  }
+  .introduction {
+    background-image: url("src/assets/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .content {
+    max-width: 100%;
+    flex: auto;
+    padding: 0;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .animate-charcter {
+    font-size: 40px;
+    background-image: none;
+    -webkit-text-fill-color: #fff;
+    text-transform: none;
+    max-width: 420px;
+    text-align: center;
+    line-height: 42px;
+    font-family: Dongle;
+  }
+  .content > p {
+    text-align: center;
+    font-family: Dongle;
+    font-size: 17px;
+    color: #fff;
+    margin-block: 0;
+    max-width: 385px;
+  }
+  .content > button {
+    border: 1.5px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    width: 137px;
+    height: 35px;
+    padding: 0;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .content {
+    height: 238.333px;
+  }
+  .animate-charcter {
+    color: #fff;
+    font-family: Dongle;
+    font-size: 38.06px;
+    line-height: 22px;
+    max-width: 290px;
+  }
+  .content > p {
+    font-size: 16.83px;
+    line-height: 10.7px;
+    max-width: 230px;
+  }
+  .content > button {
+    width: 70px;
+    height: 18px;
+    font-family: Dongle;
+    font-size: 12.83px;
+  }
+}

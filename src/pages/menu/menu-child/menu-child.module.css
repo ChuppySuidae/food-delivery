@@ -1,0 +1,488 @@
+.menu {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+}
+.title-menu {
+  position: relative;
+}
+.title-menu > h1 {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.content-menu {
+  left: 250px;
+  top: -15px;
+}
+#scrollableDiv {
+  top: -10px;
+  overflow-x: auto;
+  padding: 10px 20px;
+}
+#scrollableDiv::-webkit-scrollbar {
+  display: none;
+}
+#scrollableDiv > div > div > div > ul {
+  display: flex;
+  gap: 30px;
+}
+#scrollableDiv > div {
+  width: 80vw;
+}
+.carousel-menu {
+  width: 486px !important;
+  margin: 50px 0;
+}
+.list-menu,
+.list-menu-active {
+  width: auto;
+  padding: 5px;
+}
+
+.img-list-menu {
+  padding: 0;
+  background-color: #eb5757;
+  display: flex;
+  height: 85px;
+  width: auto;
+  padding: 9px 10px 9px 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  /* border-radius: 50%; */
+}
+.list-menu {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 7px 16px 7px rgba(0, 0, 0, 0.1);
+  width: 311px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  transition: 0.7s;
+  gap: 10px;
+  position: relative;
+}
+.list-menu > span {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.list-menu:hover {
+  border: 1px solid #c10000;
+  transform: scale(1.1);
+}
+.icon-add {
+  position: absolute;
+  right: 20px;
+}
+.list-menu-active {
+  border-radius: 16px;
+  border: 1px solid #c10000;
+  background: #fff;
+  box-shadow: 0px 7px 16px 7px rgba(0, 0, 0, 0.1);
+  width: 311px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  transition: 0.7s;
+  gap: 10px;
+  position: relative;
+}
+.list-menu-active > span {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.list-menu-active:hover {
+  transform: scale(1.1);
+}
+.list-menu-active > .icon-add {
+  transform: rotate(45deg);
+}
+.title-Fudo {
+  margin: 0 0 50px 0px;
+  color: #333;
+  margin: 0px 0px 70px 70px;
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.gr-container {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  margin-bottom: 100px;
+}
+.container-left,
+.container-right {
+  display: flex;
+  position: relative;
+  height: 350px;
+}
+.container-right {
+  flex-direction: row-reverse;
+}
+.container-left > img,
+.container-right > img {
+  width: auto;
+  height: 315px;
+  position: absolute;
+  margin-top: -10px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 350px;
+  background-color: rgba(222, 222, 222, 0.25);
+}
+
+.container-left > .content {
+  margin-left: 300px;
+  background-image: linear-gradient(to right, #fff, rgba(222, 222, 222, 0.25));
+}
+.container-left .content:hover {
+  box-shadow: 2px 2px 42px 9px rgba(0, 0, 0, 0.67);
+}
+.container-right > .content {
+  margin-right: 300px;
+  background-image: linear-gradient(to left, #fff, rgba(222, 222, 222, 0.25));
+}
+.container-right .content:hover {
+  box-shadow: 2px 2px 42px 9px rgba(0, 0, 0, 0.67);
+}
+.content-title {
+  display: flex;
+  background-color: #67666a;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+}
+.container-left h1 {
+  margin-left: 200px;
+}
+.container-right p {
+  margin-right: 200px;
+}
+.content-title > h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.content-title > p {
+  font-size: 22px;
+  font-weight: 700;
+}
+.content-title > p > span {
+  font-weight: 400;
+}
+
+.container-left .gr-ingredient {
+  margin-left: auto;
+  margin-right: 0;
+  width: 60%;
+}
+.container-right .gr-ingredient {
+  margin-left: 0;
+  margin-right: auto;
+  width: 60%;
+}
+.ingredient {
+  display: flex;
+  flex-flow: wrap column;
+  max-height: 150px;
+  gap: 10px;
+}
+.ingredient > li {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+}
+.button-add {
+  width: 208px;
+  height: 60px;
+  border-radius: 16px;
+  background: #eb5757;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  right: 5%;
+  bottom: 35px;
+}
+.container-right .button-add {
+  margin-left: 0;
+  margin-right: auto;
+  right: 40%;
+}
+@media screen and (max-width: 1450px) {
+  .container-right .button-add {
+    right: 50%;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .ingredient > li {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container-left > img,
+  .container-right > img {
+    width: auto;
+    height: 305px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container-left,
+  .container-right {
+    height: 240px;
+  }
+  .container-left > img,
+  .container-right > img {
+    width: auto;
+    height: 200px;
+  }
+  .content-title {
+    height: 36px;
+    font-family: Dongle;
+  }
+  .container-left > .content {
+    margin-left: 150px;
+    height: 240px;
+  }
+  .container-right > .content {
+    margin-right: 150px;
+    height: 240px;
+  }
+  .container-left h1 {
+    margin-left: 100px;
+  }
+  .container-right p {
+    margin-right: 100px;
+  }
+  .content-title > h1 {
+    font-size: 38.54px;
+  }
+  .content-title > p {
+    font-size: 28.78px;
+  }
+  .ingredient > li {
+    font-family: Dongle;
+    font-size: 30.39px;
+    line-height: 30px;
+  }
+  .button-add {
+    width: 132px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #c10000;
+    font-family: Dongle;
+    font-size: 28px;
+    bottom: 10px;
+  }
+  .title-menu > h1 {
+    font-family: Dongle;
+    font-size: 46.759px;
+    font-weight: 400;
+    top: -28px;
+    left: 50px;
+  }
+  .title-menu path {
+    fill: #c10000;
+  }
+  .title-menu > svg {
+    height: 70px;
+    width: auto;
+  }
+  .icon-add {
+    width: 28.614px;
+    height: 28.614px;
+    right: 10px;
+  }
+  .icon-add circle {
+    fill: #c10000;
+  }
+  .title-Fudo {
+    color: #000;
+    font-family: Dongle;
+    font-size: 42px;
+  }
+  .list-menu {
+    width: 217.044px;
+    height: 94.215px;
+  }
+  .list-menu-active {
+    width: 235px;
+    height: 94.215px;
+  }
+  .img-list-menu {
+    height: 65px;
+    max-width: 90px;
+  }
+  .list-menu > span,
+  .list-menu-active > span {
+    font-family: Dongle;
+    font-size: 26.52px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container-left h1 {
+    margin-left: 150px;
+  }
+  .container-right p {
+    margin-right: 150px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .title-menu > h1 {
+    font-family: Dongle;
+    font-size: 31.422px;
+    font-weight: 400;
+    top: -20px;
+    left: 20px;
+  }
+  .title-menu path {
+    fill: #c10000;
+  }
+  .title-menu > svg {
+    height: 49.244px;
+    width: auto;
+  }
+  .icon-add {
+    width: 15.556px;
+    height: 15.556px;
+    right: 7px;
+  }
+  .svg-line {
+    height: 40px;
+  }
+  .title-Fudo {
+    color: #000;
+    font-family: Dongle;
+    font-size: 42px;
+  }
+  .list-menu {
+    width: 125px;
+    height: 51.222px;
+    gap: 5px;
+  }
+  .list-menu-active {
+    width: 118px;
+    height: 51.222px;
+    gap: 5px;
+  }
+  .img-list-menu {
+    height: 40px;
+    max-width: 40px;
+    padding: 5px;
+  }
+  .list-menu > span,
+  .list-menu-active > span {
+    font-family: Dongle;
+    font-size: 16px;
+  }
+  #scrollableDiv {
+    height: 100px !important;
+  }
+  #scrollableDiv > div > div > div > ul {
+    display: flex;
+    gap: 15px;
+  }
+  .menu {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .container-left,
+  .container-right {
+    height: 120px;
+  }
+  .container-left > img,
+  .container-right > img {
+    width: auto;
+    height: 100px;
+  }
+  .content-title {
+    height: 11px;
+    font-family: Dongle;
+  }
+  .container-left > .content {
+    margin-left: 60px;
+    height: 120px;
+  }
+  .container-right > .content {
+    margin-right: 60px;
+    height: 120px;
+  }
+  .container-left h1 {
+    margin-left: 100px;
+  }
+  .container-right p {
+    margin-right: 100px;
+  }
+  .content-title > h1 {
+    font-size: 16px;
+  }
+  .content-title > p {
+    font-size: 13.682px;
+  }
+  .gr-container {
+    gap: 50px;
+    margin-bottom: 0px;
+  }
+  .ingredient {
+    gap: 0px;
+    max-height: 60px;
+    padding-inline-start: 25px;
+  }
+  .ingredient > li {
+    font-family: Dongle;
+    font-size: 15.44px;
+    line-height: 13px;
+  }
+  .button-add {
+    width: 48px;
+    height: 16px;
+    border-radius: 6px;
+    font-family: Dongle;
+    font-size: 10px;
+    bottom: 10px;
+  }
+  .title-Fudo {
+    font-size: 28px;
+    margin: 0px 0 40px 40px;
+  }
+}

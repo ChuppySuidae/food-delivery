@@ -1,0 +1,99 @@
+.content-reviewer {
+  display: flex;
+  flex-direction: column;
+}
+.content-reviewer > h1 {
+  color: var(--Red, #eb5757);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22.4px; /* 124.444% */
+  letter-spacing: 2.88px;
+}
+.content-reviewer > div > h1 {
+  color: var(--Gray-1, #333);
+  font-family: Poppins;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 133.333% */
+}
+.content-reviewer > div > p {
+  color: var(--Gray-1, #333);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 150% */
+  width: 80%;
+}
+.card-user {
+  display: flex;
+}
+.card-user > div > h1 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 150% */
+}
+.card-user > div > p {
+  color: var(--Gray-3, #828282);
+  margin-block-start: 0em;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 187.5% */
+}
+.rate-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.title-reviewer > h1 {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .content-reviewer > h1 {
+    display: none;
+  }
+  .title-reviewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title-reviewer > h1 {
+    display: block;
+    color: var(--Red, #eb5757);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.4px; /* 124.444% */
+    letter-spacing: 2.88px;
+  }
+  .content-reviewer > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .content-reviewer > div > h1 {
+    text-align: center;
+  }
+  .content-reviewer > div > p {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .content-reviewer > div > h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .content-reviewer > div > p {
+    font-size: 18px;
+  }
+}

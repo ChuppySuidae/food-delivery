@@ -1,0 +1,59 @@
+.submit-btn {
+  background-color: transparent;
+  border-radius: 24px;
+  border: 1px solid #eb5757;
+  color: #eb5757;
+  width: 139px;
+  height: 51px;
+  font-weight: 700;
+}
+.infor-user input {
+  background-color: #fff;
+  border-radius: 24px;
+  /* width: 369px; */
+  height: 82px;
+  color: var(--Colors-Gray-Gray-400, #7a8f94);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.opinion-user textarea {
+  background-color: #fff;
+  border-radius: 24px;
+  /* width: 432px; */
+  height: 176px;
+  color: var(--Colors-Gray-Gray-400, #7a8f94);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.infor-user input:hover,
+.opinion-user textarea:hover,
+.infor-user input:focus,
+.opinion-user textarea:focus {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  .submit-btn {
+    border-radius: 40.524px;
+    width: 184.045px;
+    height: 54.032px;
+  }
+  .infor-user input {
+    height: 51px;
+    border-radius: 12px;
+  }
+  .opinion-user textarea {
+    background-color: #fff;
+    height: 140px;
+  }
+  .title {
+    font-family: Dongle;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+  }
+}
